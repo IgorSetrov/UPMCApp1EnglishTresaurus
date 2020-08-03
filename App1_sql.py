@@ -12,6 +12,7 @@ cursor = con.cursor()
 word = input("Enter a word: ")
 
 query = cursor.execute("SELECT * FROM Dictionary WHERE Expression = '%s'" % word)
+
 results = cursor.fetchall()
 
 if results:
